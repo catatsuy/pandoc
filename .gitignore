@@ -16,3 +16,12 @@ pandoc.cabal.orig
 /windows/*.msi
 /windows/*.wixpdb
 windows/*.wixobj
+
+# User
+bin/
+cabal.config
+lib/
+logs/
+packages-7.4.1.conf/
+packages/
+share/
