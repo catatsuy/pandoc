@@ -602,8 +602,8 @@ inlineToLaTeX (Code (_,classes,_) str) = do
                   Nothing -> rawCode
                   Just  h -> modify (\st -> st{ stHighlighting = True }) >>
                              return (text h)
-         rawCode = liftM (text . (\s -> "\\texttt{" ++ s ++ "}"))
-                          $ stringToLaTeX False str
+         rawCode = liftM (text . (\s -> "\\verb`" ++ s ++ "`"))
+                          $ stringToLaTeX True str
 inlineToLaTeX (Quoted qt lst) = do
   contents <- inlineListToLaTeX lst
   csquotes <- liftM stCsquotes get
