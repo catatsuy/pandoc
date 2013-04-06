@@ -22,6 +22,6 @@ bin/
 cabal.config
 lib/
 logs/
-packages-7.4.1.conf/
+packages-*.conf/
 packages/
 share/
